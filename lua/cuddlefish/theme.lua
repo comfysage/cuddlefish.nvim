@@ -60,6 +60,7 @@
 ---@field string string
 ---@field macro string
 ---@field annotation string
+---@field literal string
 
 local M = {}
 
@@ -85,17 +86,18 @@ function M.setup(config, colors)
     completion = theme.colors[config.editor.completion.color] or theme.none,
   }
   theme.syntax = {
-    keyword = theme.purple,
+    keyword = theme.cherry,
     identifier = theme.text,
     property = theme.violet,
     type = theme.aqua,
     context = theme.overlay2,
     operator = theme.skye,
-    constant = theme.cherry,
+    constant = theme.orange,
     func = theme.pink,
     string = theme.skye,
     macro = theme.skye,
     annotation = theme.skye,
+    literal = theme.skye,
   }
   theme.diagnostic = {
     ok = theme.green,

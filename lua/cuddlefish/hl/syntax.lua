@@ -8,8 +8,8 @@ return function(theme, config)
     ['@constant.macro'] = { link = '@constant' }, -- constants defined by macros: NULL in c
 
     -- constant literals
-    ['@boolean'] = { link = '@constant' },
-    ['@number'] = { link = '@constant' },
+    ['@boolean'] = { theme.syntax.literal },
+    ['@number'] = { theme.syntax.literal },
     ['@number.float'] = { link = '@number' },
 
     -- functions
